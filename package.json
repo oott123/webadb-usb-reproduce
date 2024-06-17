@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@yume-chan/adb-daemon-webusb": "^0.0.23",
+    "usb": "^2.13.0"
+  },
+  "packageManager": "yarn@4.3.0",
+  "resolutions": {
+    "@yume-chan/adb@npm:^0.0.23": "patch:@yume-chan/adb@npm%3A0.0.23#~/.yarn/patches/@yume-chan-adb-npm-0.0.23-83c56dbb69.patch"
+  }
+}

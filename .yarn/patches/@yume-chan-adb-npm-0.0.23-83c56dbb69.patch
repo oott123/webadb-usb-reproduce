@@ -1,0 +1,12 @@
+diff --git a/esm/daemon/dispatcher.js b/esm/daemon/dispatcher.js
+index 8bca8b8dc9b542e96cb529235a171fd5ca545ecf..417f7e797316d88d179368230ac9e7c3518768fe 100644
+--- a/esm/daemon/dispatcher.js
++++ b/esm/daemon/dispatcher.js
+@@ -170,6 +170,7 @@ export class AdbPacketDispatcher {
+         }
+         const handler = this.#incomingSocketHandlers.get(service);
+         if (!handler) {
++            console.log(['incoming service', service]);
+             await this.sendPacket(AdbCommand.Close, 0, remoteId);
+             return;
+         }
